@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cacodemon</title>
+
+    <%= include_gon(watch: true) %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= javascript_tag "var AUTH_TOKEN = '#{form_authenticity_token}';" if protect_against_forgery?%>
+
+    <%= javascript_tag do %>
+      jQuery(document).ajaxSend(function(e, xhr, options) {
+       var token = jQuery("meta[name='csrf-token']").attr("content");
+        xhr.setRequestHeader("X-CSRF-Token", token);
+      });
+    <% end %>
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

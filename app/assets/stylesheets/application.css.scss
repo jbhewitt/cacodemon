@@ -1,0 +1,166 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bourbon";
+@import "neat";
+
+@charset "UTF-8";
+
+.players-container {
+	width: 150px;
+	position: fixed;
+	top: 10px;
+	border: 1px solid #666;
+}
+
+.players-container h3 {
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+	background-color: #868686;
+}
+
+.players-stage-left {
+	left: 10px;
+}
+
+.players-stage-right {
+	right: 10px;
+}
+
+.players-list .player {
+	height: 70px;
+	width: 150px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.active {
+	background-color: #73cd74;
+}
+
+#champion-grid-content {
+	margin: 10px 170px 0 160px;
+}
+
+.champion-search {
+	margin: 0 170px 0 170px;
+}
+#champion-search {
+	width: 100%;
+	border: 1px solid #cccccc;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	height: 30px;
+	line-height: 30px;
+	padding: 4px 6px;
+	color: #555555;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+
+.btn {
+	padding: 4px 0;
+	margin: 25px auto 10px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #333333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #cccccc;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-bottom-color: #b3b3b3;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	display: block;
+	width: 130px;
+}
+
+.btn-danger {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #da4f49;
+	background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+	background-repeat: repeat-x;
+	border-color: #bd362f #bd362f #802420;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+html { font-size: 62.5% }
+
+html body { font-size: 1.5em; font-family: Calibri, "Trebuchet MS", sans-serif; line-height: 1.4em; color: #000 }
+
+a img { border: 0 }
+
+* { box-sizing: border-box; }
+
+.champ-name { height: 21px; overflow: hidden; }
+
+.gs-container { clear: both; margin-left: -10px; overflow: hidden }
+
+.gs-container > * { padding-left: 10px; padding-top: 10px; float: left; position: relative }
+
+.gs-container:first-child { margin-top: -10px }
+
+.default-7-col > * { width: 14.28571% }
+
+.default-8-col > * { width: 12.5% }
+
+.default-9-col > * { width: 11.11111% }
+
+.default-10-col > * { width: 10% }
+
+.content-border { box-sizing: border-box; padding: 4px; margin-top: 20px; background-color: rgba(0, 0, 0, 0.1); border-left: 1px solid rgba(84, 84, 84, 0.3); border-top: 1px solid rgba(84, 84, 84, 0.3); border-bottom: 1px solid rgba(255, 255, 255, 0.6); border-right: 1px solid rgba(255, 255, 255, 0.6) }
+
+.content-border > * { box-shadow: 0 0 2px 0 #868686; background-color: #dedede }
+
+.content-border img { max-width: 100%; height: auto; vertical-align: middle }
+
+.content-border:first-child { margin-top: 0 }
+
+.champion-grid li div .content-border img { width: 79px; }
+
+.champion-screen img { width: 50px; }
+
+
+span.content-border { display: inline-block; }
+
+.grid-list { margin: 0; list-style-type: none; padding: 0 }
+
+.grid-list > li > div {
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #d7d7d7;
+	border-bottom: 1px solid #d7d7d7;
+	background-color: #efefef;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.grid-list > li > div:hover {
+	background-color: #dedede;
+}
+
+.grid-list > li > div.active {
+	background-color: #73cd74;
+}
+
+#champion-grid-content .grid-list > li > div {
+	text-align: center;
+}

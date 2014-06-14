@@ -1,0 +1,799 @@
+
+<pre id='player_screens' style='font-family:monospace;'></pre>
+
+
+
+<div class="champion-search">
+	<input type="text" id="champion-search" placeholder="Start typing to filter champions">
+</div>
+<div class="players-container players-stage-left">
+	<h3>Stage Left</h3>
+	<ul class="grid-list players-list">
+		<li>
+			<div id="player-1" class="player">
+				<span class="player-name">Player 1</span>
+				<b><span class="screen-player-1">blank</span></b>
+			</div>
+		</li>
+		<li>
+			<div id="player-2" class="player">
+				<span class="player-name">Player 2</span>
+			</div>
+		</li>
+		<li>
+			<div id="player-3" class="player">
+				<span class="player-name">Player 3</span>
+			</div>
+		</li>
+		<li>
+			<div id="player-4" class="player">
+				<span class="player-name">Player 4</span>
+			</div>
+		</li>
+		<li>
+			<div id="player-5" class="player">
+				<span class="player-name">Player 5</span>
+			</div>
+		</li>
+	</ul>
+	<button class="btn mode-select">Attract</button>
+	<button class="btn mode-select">Tournament</button>
+</div>
+<div class="players-container players-stage-right">
+	<h3>Stage Right</h3>
+	<ul class="grid-list players-list">
+		<li>
+			<div id="player-6" class="player">
+				<span class="player-name">Player 6</span>
+			</div>
+		</li>
+		<li>
+			<div id="player-7" class="player">
+				<span class="player-name">Player 7</span>
+			</div>
+		</li>
+		<li>
+			<div id="player-8" class="player">
+				<span class="player-name">Player 8</span>
+			</div>
+		</li>
+		<li>
+			<div id="player-9" class="player">
+				<span class="player-name">Player 9</span>
+			</div>
+		</li>
+		<li>
+			<div id="player-0" class="player">
+				<span class="player-name">Player 10</span>
+			</div>
+		</li>
+	</ul>
+	<button class="btn btn-danger blank-all">Blank All</button>
+</div>
+<div id="champion-grid-content">
+<div class=" rg-box-container rg-display-Riot.champions.GridView" data-control="cont4">
+<ul class="champion-grid grid-list gs-container gs-no-gutter default-10-col content-center">
+<li id="champion-grid-blank">
+	<div><span class="content-border"><img class="img" src="/champions/place-holder.gif"></span>
+
+		<div class="champ-name">Blank</div>
+	</div>
+</li>
+<li id="champion-grid-aatrox">
+	<div><span class="content-border"><img class="img" src="/champions/Aatrox.png"></span>
+		<div class="champ-name">Aatrox</div>
+	</div>
+</li>
+<li id="champion-grid-ahri">
+	<div><span class="content-border"><img class="img" src="/champions/Ahri.png"></span>
+
+		<div class="champ-name">Ahri</div>
+	</div>
+</li>
+<li id="champion-grid-akali">
+	<div><span class="content-border"><img class="img" src="/champions/Akali.png"></span>
+
+		<div class="champ-name">Akali</div>
+	</div>
+</li>
+<li id="champion-grid-alistar">
+	<div><span class="content-border"><img class="img" src="/champions/Alistar.png"></span>
+
+		<div class="champ-name">Alistar</div>
+	</div>
+</li>
+<li id="champion-grid-amumu">
+	<div><span class="content-border"><img class="img" src="/champions/Amumu.png"></span>
+
+		<div class="champ-name">Amumu</div>
+	</div>
+</li>
+<li id="champion-grid-anivia">
+	<div><span class="content-border"><img class="img" src="/champions/Anivia.png"></span>
+
+		<div class="champ-name">Anivia</div>
+	</div>
+</li>
+<li id="champion-grid-annie">
+	<div><span class="content-border"><img class="img" src="/champions/Annie.png"></span>
+
+		<div class="champ-name">Annie</div>
+	</div>
+</li>
+<li id="champion-grid-ashe">
+	<div><span class="content-border"><img class="img" src="/champions/Ashe.png"></span>
+
+		<div class="champ-name">Ashe</div>
+	</div>
+</li>
+<li id="champion-grid-blitzcrank">
+	<div><span class="content-border"><img class="img" src="/champions/Blitzcrank.png"></span>
+
+		<div class="champ-name">Blitzcrank</div>
+	</div>
+</li>
+<li id="champion-grid-brand">
+	<div><span class="content-border"><img class="img" src="/champions/Brand.png"></span>
+
+		<div class="champ-name">Brand</div>
+	</div>
+</li>
+<li id="champion-grid-braum">
+	<div><span class="content-border"><img class="img" src="/champions/Braum.png"></span>
+
+		<div class="champ-name">Braum</div>
+	</div>
+</li>
+<li id="champion-grid-caitlyn">
+	<div><span class="content-border"><img class="img" src="/champions/Caitlyn.png"></span>
+
+		<div class="champ-name">Caitlyn</div>
+	</div>
+</li>
+<li id="champion-grid-cassiopeia">
+	<div><span class="content-border"><img class="img" src="/champions/Cassiopeia.png"></span>
+
+		<div class="champ-name">Cassiopeia</div>
+	</div>
+</li>
+<li id="champion-grid-chogath">
+	<div><span class="content-border"><img class="img" src="/champions/Chogath.png"></span>
+
+		<div class="champ-name">Cho'Gath</div>
+	</div>
+</li>
+<li id="champion-grid-corki">
+	<div><span class="content-border"><img class="img" src="/champions/Corki.png"></span>
+
+		<div class="champ-name">Corki</div>
+	</div>
+</li>
+<li id="champion-grid-darius">
+	<div><span class="content-border"><img class="img" src="/champions/Darius.png"></span>
+
+		<div class="champ-name">Darius</div>
+	</div>
+</li>
+<li id="champion-grid-diana">
+	<div><span class="content-border"><img class="img" src="/champions/Diana.png"></span>
+
+		<div class="champ-name">Diana</div>
+	</div>
+</li>
+<li id="champion-grid-drmundo">
+	<div><span class="content-border"><img class="img" src="/champions/DrMundo.png"></span>
+
+		<div class="champ-name">Dr. Mundo</div>
+	</div>
+</li>
+<li id="champion-grid-draven">
+	<div><span class="content-border"><img class="img" src="/champions/Draven.png"></span>
+
+		<div class="champ-name">Draven</div>
+	</div>
+</li>
+<li id="champion-grid-elise">
+	<div><span class="content-border"><img class="img" src="/champions/Elise.png"></span>
+
+		<div class="champ-name">Elise</div>
+	</div>
+</li>
+<li id="champion-grid-evelynn">
+	<div><span class="content-border"><img class="img" src="/champions/Evelynn.png"></span>
+
+		<div class="champ-name">Evelynn</div>
+	</div>
+</li>
+<li id="champion-grid-ezreal">
+	<div><span class="content-border"><img class="img" src="/champions/Ezreal.png"></span>
+
+		<div class="champ-name">Ezreal</div>
+	</div>
+</li>
+<li id="champion-grid-fiddlesticks">
+	<div><span class="content-border"><img class="img" src="/champions/FiddleSticks.png"></span>
+
+		<div class="champ-name">Fiddlesticks</div>
+	</div>
+</li>
+<li id="champion-grid-fiora">
+	<div><span class="content-border"><img class="img" src="/champions/Fiora.png"></span>
+
+		<div class="champ-name">Fiora</div>
+	</div>
+</li>
+<li id="champion-grid-fizz">
+	<div><span class="content-border"><img class="img" src="/champions/Fizz.png"></span>
+
+		<div class="champ-name">Fizz</div>
+	</div>
+</li>
+<li id="champion-grid-galio">
+	<div><span class="content-border"><img class="img" src="/champions/Galio.png"></span>
+
+		<div class="champ-name">Galio</div>
+	</div>
+</li>
+<li id="champion-grid-gangplank">
+	<div><span class="content-border"><img class="img" src="/champions/Gangplank.png"></span>
+
+		<div class="champ-name">Gangplank</div>
+	</div>
+</li>
+<li id="champion-grid-garen">
+	<div><span class="content-border"><img class="img" src="/champions/Garen.png"></span>
+
+		<div class="champ-name">Garen</div>
+	</div>
+</li>
+<li id="champion-grid-gragas">
+	<div><span class="content-border"><img class="img" src="/champions/Gragas.png"></span>
+
+		<div class="champ-name">Gragas</div>
+	</div>
+</li>
+<li id="champion-grid-graves">
+	<div><span class="content-border"><img class="img" src="/champions/Graves.png"></span>
+
+		<div class="champ-name">Graves</div>
+	</div>
+</li>
+<li id="champion-grid-hecarim">
+	<div><span class="content-border"><img class="img" src="/champions/Hecarim.png"></span>
+
+		<div class="champ-name">Hecarim</div>
+	</div>
+</li>
+<li id="champion-grid-heimerdinger">
+	<div><span class="content-border"><img class="img" src="/champions/Heimerdinger.png"></span>
+
+		<div class="champ-name">Heimerdinger</div>
+	</div>
+</li>
+<li id="champion-grid-irelia">
+	<div><span class="content-border"><img class="img" src="/champions/Irelia.png"></span>
+
+		<div class="champ-name">Irelia</div>
+	</div>
+</li>
+<li id="champion-grid-janna">
+	<div><span class="content-border"><img class="img" src="/champions/Janna.png"></span>
+
+		<div class="champ-name">Janna</div>
+	</div>
+</li>
+<li id="champion-grid-jarvaniv">
+	<div><span class="content-border"><img class="img" src="/champions/JarvanIV.png"></span>
+
+		<div class="champ-name">Jarvan IV</div>
+	</div>
+</li>
+<li id="champion-grid-jax">
+	<div><span class="content-border"><img class="img" src="/champions/Jax.png"></span>
+
+		<div class="champ-name">Jax</div>
+	</div>
+</li>
+<li id="champion-grid-jayce">
+	<div><span class="content-border"><img class="img" src="/champions/Jayce.png"></span>
+
+		<div class="champ-name">Jayce</div>
+	</div>
+</li>
+<li id="champion-grid-jinx">
+	<div><span class="content-border"><img class="img" src="/champions/Jinx.png"></span>
+
+		<div class="champ-name">Jinx</div>
+	</div>
+</li>
+<li id="champion-grid-karma">
+	<div><span class="content-border"><img class="img" src="/champions/Karma.png"></span>
+
+		<div class="champ-name">Karma</div>
+	</div>
+</li>
+<li id="champion-grid-karthus">
+	<div><span class="content-border"><img class="img" src="/champions/Karthus.png"></span>
+
+		<div class="champ-name">Karthus</div>
+	</div>
+</li>
+<li id="champion-grid-kassadin">
+	<div><span class="content-border"><img class="img" src="/champions/Kassadin.png"></span>
+
+		<div class="champ-name">Kassadin</div>
+	</div>
+</li>
+<li id="champion-grid-katarina">
+	<div><span class="content-border"><img class="img" src="/champions/Katarina.png"></span>
+
+		<div class="champ-name">Katarina</div>
+	</div>
+</li>
+<li id="champion-grid-kayle">
+	<div><span class="content-border"><img class="img" src="/champions/Kayle.png"></span>
+
+		<div class="champ-name">Kayle</div>
+	</div>
+</li>
+<li id="champion-grid-kennen">
+	<div><span class="content-border"><img class="img" src="/champions/Kennen.png"></span>
+
+		<div class="champ-name">Kennen</div>
+	</div>
+</li>
+<li id="champion-grid-khazix">
+	<div><span class="content-border"><img class="img" src="/champions/Khazix.png"></span>
+
+		<div class="champ-name">Kha'Zix</div>
+	</div>
+</li>
+<li id="champion-grid-kogmaw">
+	<div><span class="content-border"><img class="img" src="/champions/KogMaw.png"></span>
+
+		<div class="champ-name">Kog'Maw</div>
+	</div>
+</li>
+<li id="champion-grid-leblanc">
+	<div><span class="content-border"><img class="img" src="/champions/Leblanc.png"></span>
+
+		<div class="champ-name">LeBlanc</div>
+	</div>
+</li>
+<li id="champion-grid-leesin">
+	<div><span class="content-border"><img class="img" src="/champions/LeeSin.png"></span>
+
+		<div class="champ-name">Lee Sin</div>
+	</div>
+</li>
+<li id="champion-grid-leona">
+	<div><span class="content-border"><img class="img" src="/champions/Leona.png"></span>
+
+		<div class="champ-name">Leona</div>
+	</div>
+</li>
+<li id="champion-grid-lissandra">
+	<div><span class="content-border"><img class="img" src="/champions/Lissandra.png"></span>
+
+		<div class="champ-name">Lissandra</div>
+	</div>
+</li>
+<li id="champion-grid-lucian">
+	<div><span class="content-border"><img class="img" src="/champions/Lucian.png"></span>
+
+		<div class="champ-name">Lucian</div>
+	</div>
+</li>
+<li id="champion-grid-lulu">
+	<div><span class="content-border"><img class="img" src="/champions/Lulu.png"></span>
+
+		<div class="champ-name">Lulu</div>
+	</div>
+</li>
+<li id="champion-grid-lux">
+	<div><span class="content-border"><img class="img" src="/champions/Lux.png"></span>
+
+		<div class="champ-name">Lux</div>
+	</div>
+</li>
+<li id="champion-grid-malphite">
+	<div><span class="content-border"><img class="img" src="/champions/Malphite.png"></span>
+
+		<div class="champ-name">Malphite</div>
+	</div>
+</li>
+<li id="champion-grid-malzahar">
+	<div><span class="content-border"><img class="img" src="/champions/Malzahar.png"></span>
+
+		<div class="champ-name">Malzahar</div>
+	</div>
+</li>
+<li id="champion-grid-maokai">
+	<div><span class="content-border"><img class="img" src="/champions/Maokai.png"></span>
+
+		<div class="champ-name">Maokai</div>
+	</div>
+</li>
+<li id="champion-grid-masteryi">
+	<div><span class="content-border"><img class="img" src="/champions/MasterYi.png"></span>
+
+		<div class="champ-name">Master Yi</div>
+	</div>
+</li>
+<li id="champion-grid-missfortune">
+	<div><span class="content-border"><img class="img" src="/champions/MissFortune.png"></span>
+
+		<div class="champ-name">Miss Fortune</div>
+	</div>
+</li>
+<li id="champion-grid-mordekaiser">
+	<div><span class="content-border"><img class="img" src="/champions/Mordekaiser.png"></span>
+
+		<div class="champ-name">Mordekaiser</div>
+	</div>
+</li>
+<li id="champion-grid-morgana">
+	<div><span class="content-border"><img class="img" src="/champions/Morgana.png"></span>
+
+		<div class="champ-name">Morgana</div>
+	</div>
+</li>
+<li id="champion-grid-nami">
+	<div><span class="content-border"><img class="img" src="/champions/Nami.png"></span>
+
+		<div class="champ-name">Nami</div>
+	</div>
+</li>
+<li id="champion-grid-nasus">
+	<div><span class="content-border"><img class="img" src="/champions/Nasus.png"></span>
+
+		<div class="champ-name">Nasus</div>
+	</div>
+</li>
+<li id="champion-grid-nautilus">
+	<div><span class="content-border"><img class="img" src="/champions/Nautilus.png"></span>
+
+		<div class="champ-name">Nautilus</div>
+	</div>
+</li>
+<li id="champion-grid-nidalee">
+	<div><span class="content-border"><img class="img" src="/champions/Nidalee.png"></span>
+
+		<div class="champ-name">Nidalee</div>
+	</div>
+</li>
+<li id="champion-grid-nocturne">
+	<div><span class="content-border"><img class="img" src="/champions/Nocturne.png"></span>
+
+		<div class="champ-name">Nocturne</div>
+	</div>
+</li>
+<li id="champion-grid-nunu">
+	<div><span class="content-border"><img class="img" src="/champions/Nunu.png"></span>
+
+		<div class="champ-name">Nunu</div>
+	</div>
+</li>
+<li id="champion-grid-olaf">
+	<div><span class="content-border"><img class="img" src="/champions/Olaf.png"></span>
+
+		<div class="champ-name">Olaf</div>
+	</div>
+</li>
+<li id="champion-grid-orianna">
+	<div><span class="content-border"><img class="img" src="/champions/Orianna.png"></span>
+
+		<div class="champ-name">Orianna</div>
+	</div>
+</li>
+<li id="champion-grid-pantheon">
+	<div><span class="content-border"><img class="img" src="/champions/Pantheon.png"></span>
+
+		<div class="champ-name">Pantheon</div>
+	</div>
+</li>
+<li id="champion-grid-poppy">
+	<div><span class="content-border"><img class="img" src="/champions/Poppy.png"></span>
+
+		<div class="champ-name">Poppy</div>
+	</div>
+</li>
+<li id="champion-grid-quinn">
+	<div><span class="content-border"><img class="img" src="/champions/Quinn.png"></span>
+
+		<div class="champ-name">Quinn</div>
+	</div>
+</li>
+<li id="champion-grid-rammus">
+	<div><span class="content-border"><img class="img" src="/champions/Rammus.png"></span>
+
+		<div class="champ-name">Rammus</div>
+	</div>
+</li>
+<li id="champion-grid-renekton">
+	<div><span class="content-border"><img class="img" src="/champions/Renekton.png"></span>
+
+		<div class="champ-name">Renekton</div>
+	</div>
+</li>
+<li id="champion-grid-rengar">
+	<div><span class="content-border"><img class="img" src="/champions/Rengar.png"></span>
+
+		<div class="champ-name">Rengar</div>
+	</div>
+</li>
+<li id="champion-grid-riven">
+	<div><span class="content-border"><img class="img" src="/champions/Riven.png"></span>
+
+		<div class="champ-name">Riven</div>
+	</div>
+</li>
+<li id="champion-grid-rumble">
+	<div><span class="content-border"><img class="img" src="/champions/Rumble.png"></span>
+
+		<div class="champ-name">Rumble</div>
+	</div>
+</li>
+<li id="champion-grid-ryze">
+	<div><span class="content-border"><img class="img" src="/champions/Ryze.png"></span>
+
+		<div class="champ-name">Ryze</div>
+	</div>
+</li>
+<li id="champion-grid-sejuani">
+	<div><span class="content-border"><img class="img" src="/champions/Sejuani.png"></span>
+
+		<div class="champ-name">Sejuani</div>
+	</div>
+</li>
+<li id="champion-grid-shaco">
+	<div><span class="content-border"><img class="img" src="/champions/Shaco.png"></span>
+
+		<div class="champ-name">Shaco</div>
+	</div>
+</li>
+<li id="champion-grid-shen">
+	<div><span class="content-border"><img class="img" src="/champions/Shen.png"></span>
+
+		<div class="champ-name">Shen</div>
+	</div>
+</li>
+<li id="champion-grid-shyvana">
+	<div><span class="content-border"><img class="img" src="/champions/Shyvana.png"></span>
+
+		<div class="champ-name">Shyvana</div>
+	</div>
+</li>
+<li id="champion-grid-singed">
+	<div><span class="content-border"><img class="img" src="/champions/Singed.png"></span>
+
+		<div class="champ-name">Singed</div>
+	</div>
+</li>
+<li id="champion-grid-sion">
+	<div><span class="content-border"><img class="img" src="/champions/Sion.png"></span>
+
+		<div class="champ-name">Sion</div>
+	</div>
+</li>
+<li id="champion-grid-sivir">
+	<div><span class="content-border"><img class="img" src="/champions/Sivir.png"></span>
+
+		<div class="champ-name">Sivir</div>
+	</div>
+</li>
+<li id="champion-grid-skarner">
+	<div><span class="content-border"><img class="img" src="/champions/Skarner.png"></span>
+
+		<div class="champ-name">Skarner</div>
+	</div>
+</li>
+<li id="champion-grid-sona">
+	<div><span class="content-border"><img class="img" src="/champions/Sona.png"></span>
+
+		<div class="champ-name">Sona</div>
+	</div>
+</li>
+<li id="champion-grid-soraka">
+	<div><span class="content-border"><img class="img" src="/champions/Soraka.png"></span>
+
+		<div class="champ-name">Soraka</div>
+	</div>
+</li>
+<li id="champion-grid-swain">
+	<div><span class="content-border"><img class="img" src="/champions/Swain.png"></span>
+
+		<div class="champ-name">Swain</div>
+	</div>
+</li>
+<li id="champion-grid-syndra">
+	<div><span class="content-border"><img class="img" src="/champions/Syndra.png"></span>
+
+		<div class="champ-name">Syndra</div>
+	</div>
+</li>
+<li id="champion-grid-talon">
+	<div><span class="content-border"><img class="img" src="/champions/Talon.png"></span>
+
+		<div class="champ-name">Talon</div>
+	</div>
+</li>
+<li id="champion-grid-taric">
+	<div><span class="content-border"><img class="img" src="/champions/Taric.png"></span>
+
+		<div class="champ-name">Taric</div>
+	</div>
+</li>
+<li id="champion-grid-teemo">
+	<div><span class="content-border"><img class="img" src="/champions/Teemo.png"></span>
+
+		<div class="champ-name">Teemo</div>
+	</div>
+</li>
+<li id="champion-grid-thresh">
+	<div><span class="content-border"><img class="img" src="/champions/Thresh.png"></span>
+
+		<div class="champ-name">Thresh</div>
+	</div>
+</li>
+<li id="champion-grid-tristana">
+	<div><span class="content-border"><img class="img" src="/champions/Tristana.png"></span>
+
+		<div class="champ-name">Tristana</div>
+	</div>
+</li>
+<li id="champion-grid-trundle">
+	<div><span class="content-border"><img class="img" src="/champions/Trundle.png"></span>
+
+		<div class="champ-name">Trundle</div>
+	</div>
+</li>
+<li id="champion-grid-tryndamere">
+	<div><span class="content-border"><img class="img" src="/champions/Tryndamere.png"></span>
+
+		<div class="champ-name">Tryndamere</div>
+	</div>
+</li>
+<li id="champion-grid-twistedfate">
+	<div><span class="content-border"><img class="img" src="/champions/TwistedFate.png"></span>
+
+		<div class="champ-name">Twisted Fate</div>
+	</div>
+</li>
+<li id="champion-grid-twitch">
+	<div><span class="content-border"><img class="img" src="/champions/Twitch.png"></span>
+
+		<div class="champ-name">Twitch</div>
+	</div>
+</li>
+<li id="champion-grid-udyr">
+	<div><span class="content-border"><img class="img" src="/champions/Udyr.png"></span>
+
+		<div class="champ-name">Udyr</div>
+	</div>
+</li>
+<li id="champion-grid-urgot">
+	<div><span class="content-border"><img class="img" src="/champions/Urgot.png"></span>
+
+		<div class="champ-name">Urgot</div>
+	</div>
+</li>
+<li id="champion-grid-varus">
+	<div><span class="content-border"><img class="img" src="/champions/Varus.png"></span>
+
+		<div class="champ-name">Varus</div>
+	</div>
+</li>
+<li id="champion-grid-vayne">
+	<div><span class="content-border"><img class="img" src="/champions/Vayne.png"></span>
+
+		<div class="champ-name">Vayne</div>
+	</div>
+</li>
+<li id="champion-grid-veigar">
+	<div><span class="content-border"><img class="img" src="/champions/Veigar.png"></span>
+
+		<div class="champ-name">Veigar</div>
+	</div>
+</li>
+<li id="champion-grid-velkoz">
+	<div><span class="content-border"><img class="img" src="/champions/Velkoz.png"></span>
+
+		<div class="champ-name">Vel'Koz</div>
+	</div>
+</li>
+<li id="champion-grid-vi">
+	<div><span class="content-border"><img class="img" src="/champions/Vi.png"></span>
+
+		<div class="champ-name">Vi</div>
+	</div>
+</li>
+<li id="champion-grid-viktor">
+	<div><span class="content-border"><img class="img" src="/champions/Viktor.png"></span>
+
+		<div class="champ-name">Viktor</div>
+	</div>
+</li>
+<li id="champion-grid-vladimir">
+	<div><span class="content-border"><img class="img" src="/champions/Vladimir.png"></span>
+
+		<div class="champ-name">Vladimir</div>
+	</div>
+</li>
+<li id="champion-grid-volibear">
+	<div><span class="content-border"><img class="img" src="/champions/Volibear.png"></span>
+
+		<div class="champ-name">Volibear</div>
+	</div>
+</li>
+<li id="champion-grid-warwick">
+	<div><span class="content-border"><img class="img" src="/champions/Warwick.png"></span>
+
+		<div class="champ-name">Warwick</div>
+	</div>
+</li>
+<li id="champion-grid-monkeyking">
+	<div><span class="content-border"><img class="img" src="/champions/MonkeyKing.png"></span>
+
+		<div class="champ-name">Wukong</div>
+	</div>
+</li>
+<li id="champion-grid-xerath">
+	<div><span class="content-border"><img class="img" src="/champions/Xerath.png"></span>
+
+		<div class="champ-name">Xerath</div>
+	</div>
+</li>
+<li id="champion-grid-xinzhao">
+	<div><span class="content-border"><img class="img" src="/champions/XinZhao.png"></span>
+
+		<div class="champ-name">Xin Zhao</div>
+	</div>
+</li>
+<li id="champion-grid-yasuo">
+	<div><span class="content-border"><img class="img" src="/champions/Yasuo.png"></span>
+
+		<div class="champ-name">Yasuo</div>
+	</div>
+</li>
+<li id="champion-grid-yorick">
+	<div><span class="content-border"><img class="img" src="/champions/Yorick.png"></span>
+
+		<div class="champ-name">Yorick</div>
+	</div>
+</li>
+<li id="champion-grid-zac">
+	<div><span class="content-border"><img class="img" src="/champions/Zac.png"></span>
+
+		<div class="champ-name">Zac</div>
+	</div>
+</li>
+<li id="champion-grid-zed">
+	<div><span class="content-border"><img class="img" src="/champions/Zed.png"></span>
+
+		<div class="champ-name">Zed</div>
+	</div>
+</li>
+<li id="champion-grid-ziggs">
+	<div><span class="content-border"><img class="img" src="/champions/Ziggs.png"></span>
+
+		<div class="champ-name">Ziggs</div>
+	</div>
+</li>
+<li id="champion-grid-zilean">
+	<div><span class="content-border"><img class="img" src="/champions/Zilean.png"></span>
+
+		<div class="champ-name">Zilean</div>
+	</div>
+</li>
+<li id="champion-grid-zyra">
+	<div><span class="content-border"><img class="img" src="/champions/Zyra.png"></span>
+
+		<div class="champ-name">Zyra</div>
+	</div>
+</li>
+</ul>
+</div>
+</div>
+
+
