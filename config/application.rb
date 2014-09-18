@@ -11,9 +11,9 @@ module Cacodemon
   class Application < Rails::Application
     
     configatron.champion.sourcefiles = "/vagrant/cacodemon/public/champions"    
-    configatron.working_dir = "/tmp/ram_disk"
+    configatron.working_dir = "/ram_disk"
 
-    configatron.qlab.ip = '192.168.10.121'
+    configatron.qlab.ip = '10.0.0.119'
     configatron.qlab.port = '53000'
     configatron.qlab.template = 'QLab Template.cues'
     configatron.qlab.sourcefiles = "/Users/jb/dev/cacodemon/cacodemon/public/champions"    

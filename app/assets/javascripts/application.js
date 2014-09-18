@@ -17,8 +17,8 @@
 
 $(function () {
 	var selected_player = false;
-	var mode_select_url = 'http://127.0.0.1:6300/screens/update_mode';
-	var champ_select_url = 'http://127.0.0.1:6300/screens/update';
+	var mode_select_url = 'http://10.0.0.119:6300/screens/update_mode';
+	var champ_select_url = 'http://10.0.0.119:6300/screens/update';
 
 	var player_list = $('.player');
 	player_list.on('click', function (e) {
@@ -47,12 +47,12 @@ $(function () {
 		// Get the character name and strip out the characters we don't want
 		var name = $.trim($(this).text()).replace(/[\W ]/g, '');
 		if (name) {
-			if (name != 'Blank') {
+			if (name != 'Blank-') {
 				name += '_0.jpg';
 			}
 
 			// TODO Delete this alert() once you're done testing, otherwise nothing will happen until you click ok on the popup
-			alert('You clicked on ' + name );
+			//alert('You clicked on ' + name );
 
 			// Do an AJAX call to the ruby app
 			$.ajax({
@@ -101,18 +101,6 @@ $(function () {
 	// Bind to the mode select buttons
 	$('.mode-select').on('click', function(e) {
 		e.preventDefault();
-
-		$('.screen-player-1').text(gon.screen[1]);
-		$('.screen-player-2').text(gon.screen[2]);
-		$('.screen-player-3').text(gon.screen[3]);
-		$('.screen-player-4').text(gon.screen[4]);
-		$('.screen-player-5').text(gon.screen[5]);
-		$('.screen-player-6').text(gon.screen[6]);
-		$('.screen-player-7').text(gon.screen[7]);
-		$('.screen-player-8').text(gon.screen[8]);
-		$('.screen-player-9').text(gon.screen[9]);
-		$('.screen-player-10').text(gon.screen[10]);
-
 
 		var mode = $.trim($(this).text()).toLowerCase();
 		$.ajax({

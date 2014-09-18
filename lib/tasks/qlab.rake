@@ -1,36 +1,71 @@
 require_relative "/vagrant/cacodemon/lib/qlab_access.rb"
+
 #require_relative 'lib/terminal_fun.rb'
 #
+
 namespace :qlab do
   task loop: :environment do
     attractpnumber = 1 #the variable which controls which screen we're changing in attract mode, consecutive counting to 10    
-    screen = OutputScreen.new      
+    detectHealthbars = DetectHealthbars.new
+    screen = OutputScreen.new
+    #screen.pry
 #BEGIN THE DOOM LOOP
     loop do
   #  mode = File.read('mode.txt')
-
-      current_mode = Mode.first.state
+      current_mode = Mode.find_by_name("attract-tournament").state
       if current_mode == 0 ## 1 = attract 
         puts "ATTRACT MODE #{attractpnumber}"              
         screen.change_player((Splash.order("RANDOM()").first.filename),attractpnumber)
         attractpnumber = attractpnumber + 1
         if attractpnumber == 11 then attractpnumber = 1 end
-      elsif current_mode == 1
-        puts "TOURNAMENT MODE"
+      elsif current_mode == 1        
+        print "."
+#### AUTOMATED DEAD PLAYERS
+        autodeath = false
+        if autodeath
+          begin
+            gamescreen = grab_screen
+           # gamescreen.pry
+            if gamescreen.is_a?(Magick::Image)                
+              detectHealthbars.screen = gamescreen
+              changes = detectHealthbars.report
+              changes.each do |change|
+                playernumber = check_player_screen(change[:number])
+                puts playernumber
+                if !change[:dead].nil?
+                  #change[:dead].pry
+                  if change[:dead] == true
+                    puts  "Player #{change[:number]} is dead? #{change[:dead]} "
+                    screen.dead_player(change[:number])
+                  end
+                  if change[:dead] == false
+                    puts  "Player #{change[:number]} is dead? #{change[:dead]} "
+                    screen.alive_player(change[:number])
+                    #screen.fadein_player(change[:number])
+                  end
+                end
+                sleep 0.05
+              end
+            end
+          rescue
+            puts "something broke trying again"
+          end
+        end
+###job queueues        
         job = Jobqueue.next
         if !job.nil?
+          puts "TOURNAMENT MODE"          
           screen.change_player(job.screen.splash.filename,job.screen.id)
           job.completed = true
           job.save
         else
           sleep(0.5)
-        end      
-          
+        end          
       end    
     end
 
-    sleep(0.1)
-    puts "."
+    sleep(0.4)
+    print "."
   end
 end
 

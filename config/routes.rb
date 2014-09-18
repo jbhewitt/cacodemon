@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   get 'screens/update_mode'
 
   get 'screens/index'
+
+  get 'screens/current'
+
+
   #options 'screens/index'
   #match '*all' => 'application#cor', :constraints => {:method => 'OPTIONS'}
 
