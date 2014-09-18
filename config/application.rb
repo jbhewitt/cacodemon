@@ -13,7 +13,9 @@ module Cacodemon
     configatron.champion.sourcefiles = "/vagrant/cacodemon/public/champions"    
     configatron.working_dir = "/ram_disk"
 
-    configatron.qlab.ip = '10.0.0.119'
+    configatron.webserver = '192.168.10.172:6300' #change - app/assets/javascripts/application.js
+
+    configatron.qlab.ip = '192.168.10.172'
     configatron.qlab.port = '53000'
     configatron.qlab.template = 'QLab Template.cues'
     configatron.qlab.sourcefiles = "/Users/jb/dev/cacodemon/cacodemon/public/champions"    

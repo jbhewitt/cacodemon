@@ -17,8 +17,8 @@
 
 $(function () {
 	var selected_player = false;
-	var mode_select_url = 'http://10.0.0.119:6300/screens/update_mode';
-	var champ_select_url = 'http://10.0.0.119:6300/screens/update';
+	var mode_select_url = "http://192.168.10.172:6300/screens/update_mode";
+	var champ_select_url = 'http://192.168.10.172:6300/screens/update';
 
 	var player_list = $('.player');
 	player_list.on('click', function (e) {
