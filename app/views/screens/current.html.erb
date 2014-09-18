@@ -1,0 +1,12 @@
+<html>
+<head>
+<meta http-equiv="refresh" content="2">
+</head>
+<body>
+<pre>
+<% (1..10).each do |i| %>
+<div><%= i %> = <span class="player<%= i %>"><%= @screen[i] %></span></div>
+<% end %>
+</pre>
+</body>
+</html>
